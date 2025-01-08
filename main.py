@@ -1,6 +1,6 @@
 import pygame
 import random
-import time  # Import for adding delays
+import time  
 
 # Initialize pygame
 pygame.init()
@@ -42,7 +42,7 @@ def display_obstacle(height):
 def collision_detection(obstacle_x, obstacle_height, bird_y):
     bottom_obstacle_height = 635 - obstacle_height - 150
     if 50 <= obstacle_x <= (50 + OBSTACLE_WIDTH):  # Check if the bird is near the obstacle
-        if bird_y <= obstacle_height or bird_y >= (bottom_obstacle_height - 64):  # Top or bottom collision
+        if bird_y <= obstacle_height or bird_y >= (bottom_obstacle_height - 64):  
             return True
     return False
 
